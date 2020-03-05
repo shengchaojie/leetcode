@@ -3,12 +3,12 @@ package com.scj.leetcode.bst;
 import java.util.Arrays;
 
 /**
- * mmp µİ¹é Í·ÌÛ
+ * mmp é€’å½’ å¤´ç–¼
  * https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
  * @author shengchaojie
  * @date 2020-03-04
  **/
-public class _105_´ÓÇ°ĞòÓëÖĞĞò±éÀúĞòÁĞ¹¹Ôì¶ş²æÊ÷ {
+public class _105_ä»å‰åºä¸ä¸­åºéå†åºåˆ—æ„é€ äºŒå‰æ ‘ {
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if(preorder.length==0&&inorder.length==0)return null;
@@ -22,7 +22,7 @@ public class _105_´ÓÇ°ĞòÓëÖĞĞò±éÀúĞòÁĞ¹¹Ôì¶ş²æÊ÷ {
 
     public static void main(String[] args) {
         int[] a = new int[]{1};
-        //Arrays.copyOfRangeÕâ·½·¨ÓĞ¶¾ ¾ÓÈ»from´Ó1¿ªÊ¼Ã»ÊÂ ÏÂÃæÄ¬ÈÏ·µ»Ø¿ÕÊı×é
+        //Arrays.copyOfRangeè¿™æ–¹æ³•æœ‰æ¯’ å±…ç„¶fromä»1å¼€å§‹æ²¡äº‹ ä¸‹é¢é»˜è®¤è¿”å›ç©ºæ•°ç»„
         int[] b =Arrays.copyOfRange(a,1,1);
         int[] c =Arrays.copyOfRange(a,1,4);
         int[] d =Arrays.copyOfRange(a,0,4);

@@ -6,7 +6,7 @@ import java.util.*;
  * @author shengchaojie
  * @date 2020-02-29
  **/
-public class _224_»ù±¾¼ÆËãÆ÷ {
+public class _224_åŸºæœ¬è®¡ç®—å™¨ {
 
     static class Solution {
         public int calculate(String s) {
@@ -56,7 +56,7 @@ public class _224_»ù±¾¼ÆËãÆ÷ {
         }
 
         public List<String> normalizeRPN(String s) {
-            //ÏÈ´¦Àís °Ñ¸÷ÔªËØ·Ö¸î¿ªÀ´
+            //å…ˆå¤„ç†s æŠŠå„å…ƒç´ åˆ†å‰²å¼€æ¥
             s =s.trim();
             List<String> tokens = new ArrayList<>();
             String temp = "";

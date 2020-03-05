@@ -3,14 +3,14 @@ package com.scj.leetcode;
 import java.util.Stack;
 
 /**
- * 1. Ê¹ÓÃswitch
- * 2. stackÊ¹ÓÃintegerÀàĞÍ ¶ø²»ÊÇÃ¿Ò»²¿²Ù×÷µÄÊ±ºòÔÙ×ª»»
- * ÓĞ¸ö½â·¨ ÓÃÊı×éÄ£ÄâÕ» µõµÄ²»ĞĞ
+ * 1. ä½¿ç”¨switch
+ * 2. stackä½¿ç”¨integerç±»å‹ è€Œä¸æ˜¯æ¯ä¸€éƒ¨æ“ä½œçš„æ—¶å€™å†è½¬æ¢
+ * æœ‰ä¸ªè§£æ³• ç”¨æ•°ç»„æ¨¡æ‹Ÿæ ˆ åŠçš„ä¸è¡Œ
  * https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/
  * @author shengchaojie
  * @date 2020-02-29
  **/
-public class _150_Äæ²¨À¼±í´ïÊ½ÇóÖµ {
+public class _150_é€†æ³¢å…°è¡¨è¾¾å¼æ±‚å€¼ {
 
     public int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack<>();
@@ -46,7 +46,7 @@ public class _150_Äæ²¨À¼±í´ïÊ½ÇóÖµ {
     }
 
     public static void main(String[] args) {
-        _150_Äæ²¨À¼±í´ïÊ½ÇóÖµ _this = new _150_Äæ²¨À¼±í´ïÊ½ÇóÖµ();
+        _150_é€†æ³¢å…°è¡¨è¾¾å¼æ±‚å€¼ _this = new _150_é€†æ³¢å…°è¡¨è¾¾å¼æ±‚å€¼();
         System.out.println(_this.evalRPN(new String[]{"2", "1", "+", "3", "*"}));
     }
 }

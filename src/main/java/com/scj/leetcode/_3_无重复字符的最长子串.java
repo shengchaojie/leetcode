@@ -4,12 +4,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * »¬¶¯´°¿ÚËã·¨
+ * æ»‘åŠ¨çª—å£ç®—æ³•
  * https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
  * @author shengchaojie
  * @date 2020-02-28
  **/
-public class _3_ÎŞÖØ¸´×Ö·ûµÄ×î³¤×Ó´® {
+public class _3_æ— é‡å¤å­—ç¬¦çš„æœ€é•¿å­ä¸² {
 
     public static  int lengthOfLongestSubstring(String s) {
         int first = 0 ;
@@ -28,7 +28,7 @@ public class _3_ÎŞÖØ¸´×Ö·ûµÄ×î³¤×Ó´® {
         return max;
     }
 
-    // TODO: 2020-02-28 ¿ÉÒÔÓÃhashmapÓÅ»¯
+    // TODO: 2020-02-28 å¯ä»¥ç”¨hashmapä¼˜åŒ–
 
     public static void main(String[] args) {
         System.out.println(lengthOfLongestSubstring("abcdabcde"));

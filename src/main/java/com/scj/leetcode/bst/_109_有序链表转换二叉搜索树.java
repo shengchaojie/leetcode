@@ -2,14 +2,14 @@ package com.scj.leetcode.bst;
 
 
 /**
- * ×îÓÅ½â
- * Ê¹ÓÃ¿ìÂıÖ¸Õë²éÕÒÁ´±íÖĞµã
- * ¶ø²»ÊÇÏÈ×ª»»³ÉÊı×é
+ * æœ€ä¼˜è§£
+ * ä½¿ç”¨å¿«æ…¢æŒ‡é’ˆæŸ¥æ‰¾é“¾è¡¨ä¸­ç‚¹
+ * è€Œä¸æ˜¯å…ˆè½¬æ¢æˆæ•°ç»„
  * https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/
  * @author shengchaojie
  * @date 2020-03-04
  **/
-public class _109_ÓĞĞòÁ´±í×ª»»¶ş²æËÑË÷Ê÷ {
+public class _109_æœ‰åºé“¾è¡¨è½¬æ¢äºŒå‰æœç´¢æ ‘ {
 
     public TreeNode sortedListToBST(ListNode head) {
         if(head ==null)return null;

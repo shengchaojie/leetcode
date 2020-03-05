@@ -4,7 +4,7 @@ package com.scj.leetcode.bst;
  * @author shengchaojie
  * @date 2020-03-03
  **/
-public class _101_¶Ô³Æ¶ş²æÊ÷ {
+public class _101_å¯¹ç§°äºŒå‰æ ‘ {
 
     public boolean isSymmetric(TreeNode root) {
         return isSymmetric(root,root);
@@ -34,7 +34,7 @@ public class _101_¶Ô³Æ¶ş²æÊ÷ {
         left.right=c;
         right.right=c;
 
-        _101_¶Ô³Æ¶ş²æÊ÷ _this = new _101_¶Ô³Æ¶ş²æÊ÷();
+        _101_å¯¹ç§°äºŒå‰æ ‘ _this = new _101_å¯¹ç§°äºŒå‰æ ‘();
         System.out.println(_this.isSymmetric(root));
     }
 

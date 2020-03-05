@@ -9,7 +9,7 @@ import java.util.Stack;
  * @author shengchaojie
  * @date 2020-03-02
  **/
-public class _144_¶ş²æÊ÷µÄÇ°Ğò±éÀú {
+public class _144_äºŒå‰æ ‘çš„å‰åºéå† {
 
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
@@ -40,7 +40,7 @@ public class _144_¶ş²æÊ÷µÄÇ°Ğò±éÀú {
             return result;
         }
         Stack<TreeNode> stack = new Stack<>();
-        //while Õâ¸öÌõ¼şÕæÄÑ¸ã¡£¡£
+        //while è¿™ä¸ªæ¡ä»¶çœŸéš¾æã€‚ã€‚
         while (root!=null|| stack.size() >0){
             while(root!=null){
                 result.add(root.val);
@@ -63,7 +63,7 @@ public class _144_¶ş²æÊ÷µÄÇ°Ğò±éÀú {
         root.left = left;
         root.right = right;
 
-        _144_¶ş²æÊ÷µÄÇ°Ğò±éÀú _this = new _144_¶ş²æÊ÷µÄÇ°Ğò±éÀú();
+        _144_äºŒå‰æ ‘çš„å‰åºéå† _this = new _144_äºŒå‰æ ‘çš„å‰åºéå†();
         _this.preorderTraversal2(root);
 
     }

@@ -7,7 +7,7 @@ import java.util.Stack;
  * @author shengchaojie
  * @date 2020-02-29
  **/
-public class _232_用栈实现队列 {
+public class _232_鐢ㄦ爤瀹炵幇闃熷垪 {
 
     static class MyQueue {
 
@@ -56,11 +56,11 @@ public class _232_用栈实现队列 {
         queue.push(1);
         queue.push(2);
         System.out.println(queue.peek());
-        // 返回 1
+        // 杩斿洖 1
         System.out.println(queue.pop());
-        // 返回 1
+        // 杩斿洖 1
         System.out.println(queue.empty());
-         // 返回 false
+         // 杩斿洖 false
 
     }
 

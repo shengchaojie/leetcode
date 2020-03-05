@@ -8,7 +8,7 @@ import java.util.Stack;
  * @author shengchaojie
  * @date 2020-02-29
  **/
-public class _20_ÓĞĞ§µÄÀ¨ºÅ {
+public class _20_æœ‰æ•ˆçš„æ‹¬å· {
 
     public boolean isValid(String s) {
         if(s.length()%2!=0){
@@ -43,7 +43,7 @@ public class _20_ÓĞĞ§µÄÀ¨ºÅ {
     }
 
     public static void main(String[] args) {
-        _20_ÓĞĞ§µÄÀ¨ºÅ _this = new _20_ÓĞĞ§µÄÀ¨ºÅ();
+        _20_æœ‰æ•ˆçš„æ‹¬å· _this = new _20_æœ‰æ•ˆçš„æ‹¬å·();
         System.out.println(_this.isValid("[(])"));
     }
 

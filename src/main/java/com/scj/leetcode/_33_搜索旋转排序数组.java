@@ -2,11 +2,11 @@ package com.scj.leetcode;
 
 /**
  * https://leetcode-cn.com/problems/search-in-rotated-sorted-array/
- * ÄæÏòË¼Î¬ ¡£¡£
+ * é€†å‘æ€ç»´ ã€‚ã€‚
  * @author shengchaojie
  * @date 2020-03-04
  **/
-public class _33_ËÑË÷Ğı×ªÅÅĞòÊı×é {
+public class _33_æœç´¢æ—‹è½¬æ’åºæ•°ç»„ {
 
     public int search(int[] nums, int target) {
         if(nums==null||nums.length==0)return -1;
@@ -17,13 +17,13 @@ public class _33_ËÑË÷Ğı×ªÅÅĞòÊı×é {
         while (start <= end) {
              mid = (start+end)/2;
              if(nums[mid]==target)return mid;
-             if(nums[mid] > nums[end]){//ËµÃ÷×ó°ë±ßÓĞĞò
+             if(nums[mid] > nums[end]){//è¯´æ˜å·¦åŠè¾¹æœ‰åº
                 if(target < nums[mid] && target >= nums[start]){
                     end = mid -1;
                 }else{
                     start = mid +1;
                 }
-             }else{//ÓÒ°ë±ßÓĞĞò
+             }else{//å³åŠè¾¹æœ‰åº
                 if(target> nums[mid] && target <= nums[end]){
                     start = mid +1;
                 }else{
@@ -38,7 +38,7 @@ public class _33_ËÑË÷Ğı×ªÅÅĞòÊı×é {
     }
 
     public static void main(String[] args) {
-        _33_ËÑË÷Ğı×ªÅÅĞòÊı×é _this = new _33_ËÑË÷Ğı×ªÅÅĞòÊı×é();
+        _33_æœç´¢æ—‹è½¬æ’åºæ•°ç»„ _this = new _33_æœç´¢æ—‹è½¬æ’åºæ•°ç»„();
         System.out.println(_this.search(new int[]{1,3}, 2));
     }
 

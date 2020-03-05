@@ -3,13 +3,13 @@ package com.scj.leetcode;
 import java.util.Stack;
 
 /**
- * ¸ßĞ§µÄ×ö·¨ ÊÇ¸ù¾İ²ãÊıÀ´ÅĞ¶Ï
+ * é«˜æ•ˆçš„åšæ³• æ˜¯æ ¹æ®å±‚æ•°æ¥åˆ¤æ–­
  * (1+2)*2 = 1*2 + 2*2
  * https://leetcode-cn.com/problems/score-of-parentheses/
  * @author shengchaojie
  * @date 2020-02-29
  **/
-public class _856_À¨ºÅµÄ·ÖÊı {
+public class _856_æ‹¬å·çš„åˆ†æ•° {
 
     //5ms
     public int scoreOfParentheses(String S) {
@@ -44,7 +44,7 @@ public class _856_À¨ºÅµÄ·ÖÊı {
        return (Integer) stack.pop();
     }
 
-    //±ÈÉÏÃæÄÇ¸ö¿ìÁË1ms
+    //æ¯”ä¸Šé¢é‚£ä¸ªå¿«äº†1ms
     public int scoreOfParentheses2(String S) {
         Stack<Object> stack = new Stack<>();
         Integer sum;
@@ -80,7 +80,7 @@ public class _856_À¨ºÅµÄ·ÖÊı {
     }
 
     public static void main(String[] args) {
-        _856_À¨ºÅµÄ·ÖÊı _this = new _856_À¨ºÅµÄ·ÖÊı();
+        _856_æ‹¬å·çš„åˆ†æ•° _this = new _856_æ‹¬å·çš„åˆ†æ•°();
         System.out.println(_this.scoreOfParentheses2("(()(()))"));
     }
 

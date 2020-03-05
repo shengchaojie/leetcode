@@ -8,18 +8,18 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * BFS ¹ã¶ÈÓÅÏÈÌâÄ¿ ²»½ö½öÊÇ¶ş²æÊ÷ÓĞÕâ¸ö Õâ¸öÊÇ¸öË¼Ïë ÒªÊ¶±ğ³öÀ´ÕâÖÖ³¡¾°
+ * BFS å¹¿åº¦ä¼˜å…ˆé¢˜ç›® ä¸ä»…ä»…æ˜¯äºŒå‰æ ‘æœ‰è¿™ä¸ª è¿™ä¸ªæ˜¯ä¸ªæ€æƒ³ è¦è¯†åˆ«å‡ºæ¥è¿™ç§åœºæ™¯
  * https://leetcode-cn.com/problems/rotting-oranges/
  * @author shengchaojie
  * @date 2020-03-04
  **/
-public class _994_¸¯ÀÃµÄéÙ×Ó {
+public class _994_è…çƒ‚çš„æ©˜å­ {
 
     public int orangesRotting(int[][] grid) {
         Queue<Position> queue = new LinkedList<>();
         int xTotal = grid[0].length;
         int yTotal = grid.length;
-        //µÚÒ»²ãÊı×éÊÇy µÚ¶ş²ãÊı×éÊÇx
+        //ç¬¬ä¸€å±‚æ•°ç»„æ˜¯y ç¬¬äºŒå±‚æ•°ç»„æ˜¯x
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
                 if (grid[i][j] == 2) {
@@ -63,13 +63,13 @@ public class _994_¸¯ÀÃµÄéÙ×Ó {
                 }
             }
 
-            //Ö»ÓĞ¸ĞÈ¾ÆäËû½Úµã²ÅĞèÒª++
+            //åªæœ‰æ„ŸæŸ“å…¶ä»–èŠ‚ç‚¹æ‰éœ€è¦++
             if(infect) {
                 time++;
             }
         }
 
-        //ÅĞ¶ÏÊÇ·ñ»¹ÓĞÎ´¸ĞÈ¾µÄ
+        //åˆ¤æ–­æ˜¯å¦è¿˜æœ‰æœªæ„ŸæŸ“çš„
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
                 if (grid[i][j] == 1) {
@@ -95,7 +95,7 @@ public class _994_¸¯ÀÃµÄéÙ×Ó {
     public static void main(String[] args) {
         //int[][] grid = new int[][]{{2,1,1},{0,1,1},{1,0,1}};
         int[][] grid = new int[][]{{1,2}};
-        _994_¸¯ÀÃµÄéÙ×Ó _this = new _994_¸¯ÀÃµÄéÙ×Ó();
+        _994_è…çƒ‚çš„æ©˜å­ _this = new _994_è…çƒ‚çš„æ©˜å­();
         System.out.println(_this.orangesRotting(grid));
     }
 

@@ -4,12 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * hashmap 索引
+ * hashmap 绱㈠紩
  * https://leetcode-cn.com/problems/two-sum/submissions/
  * @author shengchaojie
  * @date 2019-06-18
  **/
-public class _1_两数之和 {
+public class _1_涓ゆ暟涔嬪拰 {
 
 
     public int[] twoSum(int[] nums, int target) {
@@ -28,7 +28,7 @@ public class _1_两数之和 {
 
     }
     public static void main(String[] args) {
-        _1_两数之和 runner = new _1_两数之和();
+        _1_涓ゆ暟涔嬪拰 runner = new _1_涓ゆ暟涔嬪拰();
         int[] result = runner.twoSum(new int[]{3,3},6);
         System.out.println(result[0]);
         System.out.println(result[1]);

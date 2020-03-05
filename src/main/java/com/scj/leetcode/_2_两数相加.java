@@ -1,12 +1,12 @@
 package com.scj.leetcode;
 
 /**
- * 递归 注意进位问题
+ * 閫掑綊 娉ㄦ剰杩涗綅闂
  * https://leetcode-cn.com/problems/add-two-numbers/
  * @author shengchaojie
  * @date 2020-02-28
  **/
-public class _2_两数相加 {
+public class _2_涓ゆ暟鐩稿姞 {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         return addTwoNumbers(l1,l2,0);

@@ -3,12 +3,12 @@ package com.scj.leetcode.bst;
 import java.util.Arrays;
 
 /**
- * Ö»ÓĞÖĞĞò±éÀú½á¹û ´ğ°¸²»Î¨Ò» Ğ´·¨²»Í¬ ´ğ°¸²»Í¬
+ * åªæœ‰ä¸­åºéå†ç»“æœ ç­”æ¡ˆä¸å”¯ä¸€ å†™æ³•ä¸åŒ ç­”æ¡ˆä¸åŒ
  * https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/
  * @author shengchaojie
  * @date 2020-03-04
  **/
-public class _108_½«ÓĞĞòÊı×é×ª»»Îª¶ş²æËÑË÷Ê÷ {
+public class _108_å°†æœ‰åºæ•°ç»„è½¬æ¢ä¸ºäºŒå‰æœç´¢æ ‘ {
 
     public TreeNode sortedArrayToBST(int[] nums) {
         if(nums ==null|| nums.length ==0) return null;
@@ -23,7 +23,7 @@ public class _108_½«ÓĞĞòÊı×é×ª»»Îª¶ş²æËÑË÷Ê÷ {
     }
 
     public static void main(String[] args) {
-        _108_½«ÓĞĞòÊı×é×ª»»Îª¶ş²æËÑË÷Ê÷ _this = new _108_½«ÓĞĞòÊı×é×ª»»Îª¶ş²æËÑË÷Ê÷();
+        _108_å°†æœ‰åºæ•°ç»„è½¬æ¢ä¸ºäºŒå‰æœç´¢æ ‘ _this = new _108_å°†æœ‰åºæ•°ç»„è½¬æ¢ä¸ºäºŒå‰æœç´¢æ ‘();
         TreeNode root = _this.sortedArrayToBST(new int[]{1,2,3,4,5});
         System.out.println(root);
     }

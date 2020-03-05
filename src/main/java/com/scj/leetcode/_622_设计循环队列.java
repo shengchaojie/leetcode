@@ -4,7 +4,7 @@ package com.scj.leetcode;
  * @author shengchaojie
  * @date 2020-03-01
  **/
-public class _622_设计循环队列 {
+public class _622_璁捐寰幆闃熷垪 {
 
     static class MyCircularQueue {
 

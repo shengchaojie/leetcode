@@ -7,7 +7,7 @@ import java.util.*;
  * @author shengchaojie
  * @date 2020-03-02
  **/
-public class _145_¶ş²æÊ÷µÄºóĞò±éÀú {
+public class _145_äºŒå‰æ ‘çš„ååºéå† {
 
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> result  = new ArrayList<>();
@@ -24,7 +24,7 @@ public class _145_¶ş²æÊ÷µÄºóĞò±éÀú {
                 result.add(node.val);
             }else{
                 root = node.right;
-                //ÎªÁË¶Ï¿ªÁ¬½Ó Éî¿½±´Ò»¸ö
+                //ä¸ºäº†æ–­å¼€è¿æ¥ æ·±æ‹·è´ä¸€ä¸ª
                 stack.push(new TreeNode(node.val));
             }
         }

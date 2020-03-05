@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author shengchaojie
  * @date 2020-03-04
  **/
-public class _106_从中序与后序遍历序列构造二叉树 {
+public class _106_浠庝腑搴忎笌鍚庡簭閬嶅巻搴忓垪鏋勯�犱簩鍙夋爲 {
 
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         if(inorder.length ==0 ) return null;

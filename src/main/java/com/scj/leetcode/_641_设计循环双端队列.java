@@ -6,7 +6,7 @@ package com.scj.leetcode;
  * @author shengchaojie
  * @date 2020-03-01
  **/
-public class _641_Éè¼ÆÑ­»·Ë«¶Ë¶ÓÁĞ {
+public class _641_è®¾è®¡å¾ªç¯åŒç«¯é˜Ÿåˆ— {
 
     public static class MyCircularDeque {
 
@@ -114,18 +114,18 @@ public class _641_Éè¼ÆÑ­»·Ë«¶Ë¶ÓÁĞ {
     }
 
     public static void main(String[] args) {
-        MyCircularDeque circularDeque = new MyCircularDeque(8); // ÉèÖÃÈİÁ¿´óĞ¡Îª3
-        circularDeque.insertFront(1);                    // ·µ»Ø true
-        circularDeque.insertLast(2);                    // ·µ»Ø true
-        circularDeque.insertFront(3);                    // ·µ»Ø true
+        MyCircularDeque circularDeque = new MyCircularDeque(8); // è®¾ç½®å®¹é‡å¤§å°ä¸º3
+        circularDeque.insertFront(1);                    // è¿”å› true
+        circularDeque.insertLast(2);                    // è¿”å› true
+        circularDeque.insertFront(3);                    // è¿”å› true
         circularDeque.insertFront(4);
         circularDeque.insertFront(5);
-        circularDeque.deleteLast(); // ÒÑ¾­ÂúÁË£¬·µ»Ø false
-        circularDeque.getRear();                // ·µ»Ø 2
-        circularDeque.isFull();                        // ·µ»Ø true
-        circularDeque.deleteLast();                    // ·µ»Ø true
-        circularDeque.insertFront(4);                    // ·µ»Ø true
-        circularDeque.getFront();                // ·µ»Ø 4
+        circularDeque.deleteLast(); // å·²ç»æ»¡äº†ï¼Œè¿”å› false
+        circularDeque.getRear();                // è¿”å› 2
+        circularDeque.isFull();                        // è¿”å› true
+        circularDeque.deleteLast();                    // è¿”å› true
+        circularDeque.insertFront(4);                    // è¿”å› true
+        circularDeque.getFront();                // è¿”å› 4
 
     }
 

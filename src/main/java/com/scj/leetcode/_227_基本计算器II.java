@@ -3,13 +3,13 @@ package com.scj.leetcode;
 import java.util.*;
 
 /**
- * 使用双栈
+ * 浣跨敤鍙屾爤
  * https://leetcode-cn.com/problems/basic-calculator-ii/
  *
  * @author shengchaojie
  * @date 2020-02-29
  **/
-public class _227_基本计算器II {
+public class _227_鍩烘湰璁＄畻鍣↖I {
 
     static Set<Character> operatorSet = new HashSet<>();
 
@@ -89,7 +89,7 @@ public class _227_基本计算器II {
     }
 
     public static void main(String[] args) {
-        _227_基本计算器II _this = new _227_基本计算器II();
+        _227_鍩烘湰璁＄畻鍣↖I _this = new _227_鍩烘湰璁＄畻鍣↖I();
         System.out.println(_this.calculate("1*2-3*4"));
     }
 

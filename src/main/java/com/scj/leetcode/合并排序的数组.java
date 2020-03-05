@@ -1,14 +1,14 @@
 package com.scj.leetcode;
 
 /**
- * ºó²å·¨ ×îÓÅ½â
- * ĞÂ½¨Ò»¸öÊı×é¾ÓÈ»Ò²¿ÉÒÔ¡£¡£·Ö±ğÈ¡³ö×îĞ¡µÄ·Å½øĞÂÊı×é
+ * åæ’æ³• æœ€ä¼˜è§£
+ * æ–°å»ºä¸€ä¸ªæ•°ç»„å±…ç„¶ä¹Ÿå¯ä»¥ã€‚ã€‚åˆ†åˆ«å–å‡ºæœ€å°çš„æ”¾è¿›æ–°æ•°ç»„
  * https://leetcode-cn.com/problems/sorted-merge-lcci/
  *
  * @author shengchaojie
  * @date 2020-03-03
  **/
-public class ºÏ²¢ÅÅĞòµÄÊı×é {
+public class åˆå¹¶æ’åºçš„æ•°ç»„ {
 
     public void merge(int[] A, int m, int[] B, int n) {
         int i = m - 1;
@@ -21,7 +21,7 @@ public class ºÏ²¢ÅÅĞòµÄÊı×é {
                 A[k--]=B[j--];
             }
         }
-        //BÄÚ¿ÉÄÜ´æÔÚ±ÈA×îĞ¡µÄ»¹Ğ¡µÄÇé¿ö
+        //Bå†…å¯èƒ½å­˜åœ¨æ¯”Aæœ€å°çš„è¿˜å°çš„æƒ…å†µ
         while(j>=0){
             A[j]=B[j--];
 
@@ -30,7 +30,7 @@ public class ºÏ²¢ÅÅĞòµÄÊı×é {
     }
 
     public static void main(String[] args) {
-        ºÏ²¢ÅÅĞòµÄÊı×é _this = new ºÏ²¢ÅÅĞòµÄÊı×é();
+        åˆå¹¶æ’åºçš„æ•°ç»„ _this = new åˆå¹¶æ’åºçš„æ•°ç»„();
         int[] a = new int[]{4,5,6, 0, 0, 0};
         int[] b = new int[]{1, 2, 3};
         _this.merge(a, 3, b, 3);
