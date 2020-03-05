@@ -5,14 +5,14 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * »¹ÊÇÏß³ÌµÈ´ıÎÊÌâ£¬²»¹ıÊÇ½»ÌæµÈ´ı
- * Õâ±ß²ÉÓÃ Í¬²½µÈ´ıÍ¨Öª + ±ê¼Ç±äÁ¿
- * ¸Ğ¾õĞÅºÅÁ¿ 1 0 ½»ÌæÕâÖÖ½Ó·¨ºÃÒ»µã
+ * è¿˜æ˜¯çº¿ç¨‹ç­‰å¾…é—®é¢˜ï¼Œä¸è¿‡æ˜¯äº¤æ›¿ç­‰å¾…
+ * è¿™è¾¹é‡‡ç”¨ åŒæ­¥ç­‰å¾…é€šçŸ¥ + æ ‡è®°å˜é‡
+ * æ„Ÿè§‰ä¿¡å·é‡ 1 0 äº¤æ›¿è¿™ç§æ¥æ³•å¥½ä¸€ç‚¹
  * https://leetcode-cn.com/problems/print-foobar-alternately/
  * @author shengchaojie
  * @date 2020-02-28
  **/
-public class _1115_½»Ìæ´òÓ¡FooBar {
+public class _1115_äº¤æ›¿æ‰“å°FooBar {
 
     class FooBar {
         private int n;

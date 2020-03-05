@@ -6,13 +6,13 @@ import java.util.concurrent.Semaphore;
 import java.util.function.IntConsumer;
 
 /**
- * Õâ¸öË¼Â·ÓĞÒâË¼
+ * è¿™ä¸ªæ€è·¯æœ‰æ„æ€
  * https://leetcode-cn.com/problems/fizz-buzz-multithreaded/
  *
  * @author shengchaojie
  * @date 2020-02-28
  **/
-public class _1195_½»Ìæ´òÓ¡×Ö·û´®2 {
+public class _1195_äº¤æ›¿æ‰“å°å­—ç¬¦ä¸²2 {
 
 
     public static class FizzBuzz {

@@ -4,14 +4,14 @@ import java.util.concurrent.Semaphore;
 import java.util.function.IntConsumer;
 
 /**
- * ¹Ø¼üµãÊÇ ÈÃforÑ­»·Ö´ĞĞ ×èÈûÔÚÏÂÒ»¸öÊä³öµã
- * ÈÃÊä³öÊı×ÖµÄÏß³Ìµ±Ğ­µ÷Õß
+ * å…³é”®ç‚¹æ˜¯ è®©forå¾ªç¯æ‰§è¡Œ é˜»å¡åœ¨ä¸‹ä¸€ä¸ªè¾“å‡ºç‚¹
+ * è®©è¾“å‡ºæ•°å­—çš„çº¿ç¨‹å½“åè°ƒè€…
  * https://leetcode-cn.com/problems/fizz-buzz-multithreaded/
  *
  * @author shengchaojie
  * @date 2020-02-28
  **/
-public class _1195_½»Ìæ´òÓ¡×Ö·û´® {
+public class _1195_äº¤æ›¿æ‰“å°å­—ç¬¦ä¸² {
 
 
     public static class FizzBuzz {

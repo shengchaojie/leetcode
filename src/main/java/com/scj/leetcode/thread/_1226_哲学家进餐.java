@@ -10,11 +10,11 @@ import java.util.concurrent.TimeUnit;
  * @author shengchaojie
  * @date 2020-02-28
  **/
-public class _1226_ÕÜÑ§¼Ò½ø²Í {
+public class _1226_å“²å­¦å®¶è¿›é¤ {
 
     class DiningPhilosophers {
         /**
-         * ²æ×ÓµÄ×´Ì¬
+         * å‰å­çš„çŠ¶æ€
          */
         Semaphore fork_1_status = new Semaphore(1);
         Semaphore fork_2_status = new Semaphore(1);
@@ -35,7 +35,7 @@ public class _1226_ÕÜÑ§¼Ò½ø²Í {
                                Runnable eat,
                                Runnable putLeftFork,
                                Runnable putRightFork) throws InterruptedException {
-            //Ëø¶¨²æ×Ó
+            //é”å®šå‰å­
             Semaphore left = fork_status[philosopher];
             Semaphore right = fork_status[(philosopher+1)%5];
 

@@ -5,12 +5,12 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 让线程实现等待，这边采用countdownlatch，还可以自旋变量，或者synchronize 等待条件变化
+ * 璁╃嚎绋嬪疄鐜扮瓑寰咃紝杩欒竟閲囩敤countdownlatch锛岃繕鍙互鑷棆鍙橀噺锛屾垨鑰卻ynchronize 绛夊緟鏉′欢鍙樺寲
  * https://leetcode-cn.com/problems/print-in-order/
  * @author shengchaojie
  * @date 2020-02-28
  **/
-public class _1114_按序打印 {
+public class _1114_鎸夊簭鎵撳嵃 {
 
     public static class Foo {
 

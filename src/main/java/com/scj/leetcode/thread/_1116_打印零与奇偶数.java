@@ -3,12 +3,12 @@ package com.scj.leetcode.thread;
 import java.util.function.IntConsumer;
 
 /**
- * »¹ÊÇÓÃsemaphore×îÎª·½±ã 1 0 0 µÄsemaphore
+ * è¿˜æ˜¯ç”¨semaphoreæœ€ä¸ºæ–¹ä¾¿ 1 0 0 çš„semaphore
  * https://leetcode-cn.com/problems/print-zero-even-odd/
  * @author shengchaojie
  * @date 2020-02-28
  **/
-public class _1116_´òÓ¡ÁãÓëÆæÅ¼Êı {
+public class _1116_æ‰“å°é›¶ä¸å¥‡å¶æ•°{
 
     class ZeroEvenOdd {
         private int n;
