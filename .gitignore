@@ -1,0 +1,9 @@
+app/test/test-output
+*.log
+app/test/bkloansceneprod/logs/obproxy
+.idea
+*iml
+*.log.*
+app/test/bkloansceneprod/logs/obproxy
+build-main.xml
+target/
