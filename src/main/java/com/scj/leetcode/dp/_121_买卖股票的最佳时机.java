@@ -8,6 +8,12 @@ package com.scj.leetcode.dp;
  **/
 public class _121_买卖股票的最佳时机 {
 
+    /**
+     * 自创算法
+     * 思想和动态规划类似。。。但是方向反了
+     * @param prices
+     * @return
+     */
     public int maxProfit(int[] prices) {
         if (prices == null || prices.length < 2) return 0;
         int max = 0;
@@ -36,6 +42,13 @@ public class _121_买卖股票的最佳时机 {
         return max;
     }
 
+    /**
+     * 动态规划
+     * 先算前2天的最大收益 和 最小买入价
+     * 迭代到最后一天
+     * @param prices
+     * @return
+     */
     public int maxProfit2(int[] prices) {
         if (prices == null || prices.length < 2) return 0;
         int max = 0;
