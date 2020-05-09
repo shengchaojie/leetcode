@@ -62,9 +62,60 @@ public class _121_买卖股票的最佳时机 {
     }
 
 
+    /**
+     * 真 动态规划
+     * 状态 第几天 是否持有(1 持有 0 未持有)
+     * 选择 买 卖 持有
+     * 转移方程
+     * dp[i][0] = max(dp[i-1][0],dp[i-1][1]+price[i])
+     * dp[i][1] = max(dp[i-1][1],-price[i])
+     * base case
+     * dp[0][0] = 0
+     * dp[0][1] = -prices[i]
+     * @param prices
+     * @return
+     */
+    public int maxProfit3(int[] prices) {
+        if (prices == null || prices.length < 2) return 0;
+        int n = prices.length;
+        int[][] dp = new int[n][2];
+        for(int i=0;i<n;i++){
+            if(i==0){
+                dp[i][0]=0;
+                dp[i][1]= -prices[i];
+                continue;
+            }
+            dp[i][0] = Math.max(dp[i-1][0],dp[i-1][1]+prices[i]);
+            dp[i][1] = Math.max(dp[i-1][1],-prices[i]);
+        }
+        return dp[n-1][0];
+    }
+
+    /**
+     * 优化dp
+     * @param prices
+     * @return
+     */
+    public int maxProfit4(int[] prices) {
+        if (prices == null || prices.length < 2) return 0;
+        int n = prices.length;
+        int[][] dp = new int[n][2];
+        for(int i=0;i<n;i++){
+            if(i==0){
+                dp[i][0]=0;
+                dp[i][1]= -prices[i];
+                continue;
+            }
+            dp[i][0] = Math.max(dp[i-1][0],dp[i-1][1]+prices[i]);
+            dp[i][1] = Math.max(dp[i-1][1],-prices[i]);
+        }
+        return dp[n-1][0];
+    }
+
+
     public static void main(String[] args) {
         _121_买卖股票的最佳时机 _this = new _121_买卖股票的最佳时机();
-        System.out.println(_this.maxProfit2(new int[]{7, 1, 5, 3, 6, 4}));
+        System.out.println(_this.maxProfit3(new int[]{7, 1, 5, 3, 6, 4}));
 //        System.out.println(_this.maxProfit(new int[]{7,6,4,3,1}));
 //        System.out.println(_this.maxProfit(new int[]{1,7,2,4}));
     }
