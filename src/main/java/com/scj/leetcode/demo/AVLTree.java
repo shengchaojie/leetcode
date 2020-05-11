@@ -49,7 +49,7 @@ public class AVLTree<E> {
     }
 
     /**
-     * @param node 新插入的节点
+     * @param node 鏂版彃鍏ョ殑鑺傜偣
      */
     public void afterNodeAdd(AVLNode<E> node) {
         if (node == null) return;
@@ -222,7 +222,7 @@ public class AVLTree<E> {
             }
         });
 
-        //测试左旋
+        //娴嬭瘯宸︽棆
 //        tree.add(1);
 //        tree.add(2);
 //        tree.add(3);

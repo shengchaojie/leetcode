@@ -1,7 +1,5 @@
 package com.scj.leetcode;
 
-import sun.tools.jconsole.inspector.XTable;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
