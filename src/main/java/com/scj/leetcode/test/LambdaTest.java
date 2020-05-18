@@ -8,6 +8,7 @@ public class LambdaTest {
 
     public static void main(String[] args) {
         Runnable runnable = () -> System.out.println("Lambda Thread run()");
+        System.out.println(runnable.getClass().getName());
         new Thread(
                runnable
         ).start();;

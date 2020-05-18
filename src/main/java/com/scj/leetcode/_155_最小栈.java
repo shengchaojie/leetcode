@@ -1,7 +1,9 @@
 package com.scj.leetcode;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  *
@@ -15,6 +17,9 @@ import java.util.List;
  **/
 public class _155_最小栈 {
 
+    /**
+     * 最简陋的做法
+     */
     static class MinStack {
 
         List<Integer> arrayList = new ArrayList<>();
@@ -52,12 +57,147 @@ public class _155_最小栈 {
         }
     }
 
+    /**
+     * 使用2个栈实现
+     */
+    public static class MinStack2 {
+
+        private LinkedList<Integer> stack;
+
+        private LinkedList<Integer> minStack;
+
+
+        /** initialize your data structure here. */
+        public MinStack2() {
+            stack = new LinkedList<>();
+            minStack = new LinkedList<>();
+        }
+
+        public void push(int x) {
+            stack.addFirst(x);
+            Integer first = minStack.peekFirst();
+            //重点这个=
+            if(first==null || first >= x){
+                minStack.addFirst(x);
+            }
+        }
+
+        public void pop() {
+            Integer first = stack.pollFirst();
+            if(Objects.equals(first,minStack.peekFirst())){
+                minStack.pollFirst();
+            }
+        }
+
+        public int top() {
+            return stack.peekFirst();
+        }
+
+        public int getMin() {
+            return minStack.peekFirst();
+        }
+    }
+
+    /**
+     * 保留最小值
+     * 如果出现更小的 包括等于
+     * 那么先把之前的最小值压入
+     */
+    public static class MinStack3 {
+
+
+        private LinkedList<Integer> stack;
+
+        Integer minNumber;
+
+        /** initialize your data structure here. */
+        public MinStack3() {
+            stack = new LinkedList<>();
+        }
+
+        public void push(int x) {
+
+            if(minNumber ==null){
+                minNumber = x;
+            }else if(minNumber >=x){
+                stack.push(minNumber);
+                minNumber =x;
+            }
+            stack.push(x);
+        }
+
+        public void pop() {
+            Integer number = stack.pollFirst();
+            if(Objects.equals(minNumber,number)){
+                minNumber = stack.pollFirst();
+            }
+        }
+
+        public int top() {
+            return stack.peekFirst();
+        }
+
+        public int getMin() {
+            return minNumber;
+        }
+    }
+
+    public static class MinStack4 {
+
+        private LinkedList<Long> stack = new LinkedList<>();
+
+        private Long min;
+
+        /** initialize your data structure here. */
+        public MinStack4() {
+
+        }
+
+        public void push(int x) {
+            if(min ==null){
+                min = (long)x;
+            }
+            stack.push((long)x-min);
+            if(min > x){
+                min =(long)x;
+            }
+        }
+
+        public void pop() {
+            Long first = stack.pollFirst();
+            if(first<0){
+                min -= first;
+            }
+            if(stack.isEmpty()){
+                min = null;
+            }
+        }
+
+        public int top() {
+            Long first = stack.peekFirst();
+            if(first<0){
+                return min.intValue();
+            }else{
+                return (int)(min+first);
+            }
+        }
+
+        public int getMin() {
+            return min.intValue();
+        }
+    }
+
     public static void main(String[] args) {
-        MinStack minStack = new MinStack();
-        minStack.push(-2);
-        minStack.push(-3);
+        MinStack4 minStack = new MinStack4();
+        minStack.push(2147483646);
+        minStack.push(2147483646);
+        minStack.push(2147483647);
 
         System.out.println(minStack.top());
+        minStack.pop();
+        minStack.pop();
+        minStack.pop();
+        minStack.push(2147483647);
         System.out.println(minStack.getMin());
     }
 
