@@ -61,7 +61,6 @@ public class _53_最大子序和 {
         _53_最大子序和 _this = new _53_最大子序和();
         System.out.println(_this.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
         System.out.println(_this.maxSubArray2(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
-
     }
 
 }
